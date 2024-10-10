@@ -1,5 +1,5 @@
 {% set name = "pydda" %}
-{% set version = "2.0.0" %}
+{% set version = "2.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e870bb532b814675c901291cdc90978328645e7a50b1c8556d52f343d0351968
+  sha256: 8542b46f69eaa07474116dde65e32ef8875647ffdfc009a5a56c79df34e94a95
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
